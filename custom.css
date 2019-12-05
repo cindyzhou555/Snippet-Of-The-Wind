@@ -1,0 +1,30 @@
+body{
+  background-color: #000;
+}
+
+.letters span{
+  color:#333;
+  display:inline-block;
+  letter-spacing: .5em;
+  transition: .8s;
+  font-size: 2em;
+  filter:blur(4px);
+}
+
+.letters span.focus, .letters span.focus + span, .letters.minusOne > span:first-child, .letters span.focus + span + span, .letters.minusTwo > span:first-child, .letters.minusOne > span:nth-child(2){
+  color:#fff;
+  filter: blur(0);
+}
+
+.topCenter, .bottomCenter{
+  position:fixed;
+  top:30%;
+  text-align: center;
+  width:100%;
+}
+
+.bottomCenter{
+  top:auto;
+  bottom:25%;
+  font-size: 1.5em;
+}
