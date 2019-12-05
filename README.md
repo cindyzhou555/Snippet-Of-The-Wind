@@ -1,18 +1,21 @@
-# Snippet-Of-The-Wind
+# Windsper
+## Summary:
+This project is the official (non-commercial) website for the Wind’s Whisper (风言风语) game studio co-founded by Yuxin and Shuyue. It would consist of a fancy opening game, basic information about ourselves and our projects, and a form for comments or feedback. While we want it to display the general information that people would look for in an official website (our projects, contact info, etc.), we also want people to have a playful experience. We hope to exhibit some basic JS skills and aesthetics as game designers through this project.
+## Inspiration:
+As game designers, we are interested in the delivery of socio-cultural and educational significance through playful environments. We hope our audience to explore personal meaning when having fun. The idea of the project comes from the name of our studio, Wind’s Whisper (referring to the sarcastic meaning of rumors and the whisper of the wind), which is a combination of the derivative imagery of both our names. As a result, we would present a leaf flowing everywhere in the blowing wind as the interactive event to engage the audience, echoing the theme of our website.
+## Design and Technical reference:
+https://paradowski.com/
 
-#### Summary
->*In a few sentences, concisely describe what this project is about.*
+https://wild.as/
 
-This project is the official website for the 风言风语 game studio co-founded by Yunxin and Shuyue. It would be consist of a fancy opening game, basic information about ourselves and our project, and a form for comments or feedbacks. While we want it to display the general information that people would look for in an official website (our project, contact info, etc.), we also want people to have a playful experience. We hope to exhibit some basic JS skills and aesthetics as game designers through this project.
+https://www.eatsleepwork.com/
 
-#### Inspiration:
->*Why is making such a project important to you? Be personal and honest to yourself. Include some visual reference here – concept maps, images, sound, gifs, websites, your favorite novelists or movies or comic books, etc.*
+https://www.danielhedquist.com/portfolio
 
+https://www.rollstudio.co.uk/work/grano-armando/
 
-#### Design and Technical reference:
->*Websites, tutorials you intend to follow and incorporate into your own project.*
+Google's Halloween opening
+## Process:
+Technically, the steps needed to test our concept are as follows: (a) identifying the js logic in our website events, (b) searching keywords of the event effects on google to see how it is implemented with js, and (c) searching existing works to see what we can borrow from their codes.
 
-#### Process:
->*What experiments have you tried so far? What did you like and not like about them? How did you appropriate an imagination/inspiration with concrete shapes and forms? How did you teach yourself something you didn’t know before? What are the next steps you might want to take to further develop your project? Include screencaps of what you have done so far in this section, and list out a few more steps for further action.*
-
-As a creative technologist/interaction designer/educational technologist/ web developer, I am interested to explore/research/investigate_________________. I became interested in this topic when___________________. I would like my audience (students) to interact with this piece by________________. I would like them to feel__________________. Technically, I think these are the steps needed to test my concept: __________________. I have researched into a few similar projects, such as _________________(provide visual references). I think in the next few weeks, I would like to use the class time to find out how to________________. Visually, I would like my piece to look like ________________(provide visual references).
+For the upcoming weeks, we would like to use the class time to further develop our website with the following steps: (a) building up html framework for the web content & finalizing the information hierarchy, (b) finalizing the visual style of the website & creating css effects, (c) integrating js elements and events for the entire website, (d) reviewing the preliminary work and adding more animated effects and interactive components, and (e) media query on different devices.  
