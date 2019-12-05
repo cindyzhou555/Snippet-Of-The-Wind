@@ -1,4 +1,4 @@
-# Wind's Whisper
+# Windsper
 ## Summary:
 This project is the official (non-commercial) website for the Wind’s Whisper (风言风语) game studio co-founded by Yuxin and Shuyue. It would consist of a fancy opening game, basic information about ourselves and our projects, and a form for comments or feedback. While we want it to display the general information that people would look for in an official website (our projects, contact info, etc.), we also want people to have a playful experience. We hope to exhibit some basic JS skills and aesthetics as game designers through this project.
 ## Inspiration:
