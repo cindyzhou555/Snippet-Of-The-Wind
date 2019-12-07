@@ -30,3 +30,24 @@ window.addEventListener("load",function(event){
       }
     },200)
 });
+
+var section = document.getElementsByClassName("section");
+var i = 0;
+
+function hoverSection() {
+  section[i].onmouseover = function() {
+    for (j = 0; j < section.length; j++) {
+      section[j].classList.remove("hover");
+    }
+    this.classList.add("hover");
+  }
+  section[i].onmouseout = function() {
+    for (j = 0; j < section.length; j++) {
+      section[j].classList.remove("hover");
+    }
+  }
+}
+
+for (var i = 0; i < section.length; i++) {
+  hoverSection(i);
+}

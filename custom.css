@@ -1,5 +1,9 @@
 body{
+  margin:0;
+  padding:0;
   background-color: #000;
+  color:#fff;
+  font-family: 'Handlee', cursive;
 }
 
 .letters span{
@@ -17,14 +21,136 @@ body{
 }
 
 .topCenter, .bottomCenter{
-  position:fixed;
+  position:absolute;
   top:30%;
   text-align: center;
   width:100%;
 }
 
+.topCenter{
+font-family: 'Great Vibes', cursive;}
+
 .bottomCenter{
-  top:auto;
-  bottom:25%;
-  font-size: 1.5em;
+  top:60%;
+  /* bottom:20%; */
+  font-size: 1.4em;
 }
+
+.logo {
+  position: absolute;
+  width: 6em;
+  height: 6em;
+  left: 46%;
+  top:5%;
+}
+
+.title{
+  margin-bottom: 80%;
+}
+
+.menu{
+  position: relative;
+  height: 200px;
+}
+
+.timeAxis{
+width: 500px;
+height:30px;
+margin: 10px auto;
+display:flex;
+justify-content: space-between;
+list-style: none;
+position: absolute;
+padding: 0;
+transform: rotate(90deg);
+left:0;
+right:0;
+top: 150%;
+}
+
+.timeAxis li{
+  width: 30px;
+  height:30px;
+  border-radius: 50%;
+  background-color:#333;
+  position:relative;
+  z-index: 2;
+  line-height: 30px;
+  text-align: center;
+
+}
+
+.timeAxis:after{
+  content:'';
+  height:5px;
+  width:98%;
+  position:absolute;
+  background-color: #ccc;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+    margin:auto;
+    background-image: linear-gradient(90deg, #333,#fff);
+}
+
+
+.timeAxis li.hover{
+  background-color: #fff;
+  transform: scale(1.05);
+}
+
+.sectionName{
+margin: 39px;
+font-size: 30px;
+}
+
+.occupied{
+margin: 39px;
+font-size: 30px;
+visibility: hidden;
+}
+
+
+.alignment{
+  margin: 31px auto;
+  height: 200px;
+  position: relative;
+
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* .timeAxis{
+  width:500px;
+  margin: auto;
+  outline: 1px solid #f00;
+  list-style: none;
+}
+
+.timeAxis li{
+  padding:30px;
+  outline: 1px solid #00f;
+  border-left: 4px solid #fff;
+  position: relative;
+}
+
+.timeAxis li:before{
+  content:'';
+  position:absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  border-radius: 50%;
+  top:-20px;
+  left:-20px;
+} */
