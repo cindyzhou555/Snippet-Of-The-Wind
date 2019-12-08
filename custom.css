@@ -25,6 +25,8 @@ body{
   top:30%;
   text-align: center;
   width:100%;
+  font-family: 'Great Vibes', cursive;
+
 }
 
 .topCenter{
@@ -33,7 +35,7 @@ font-family: 'Great Vibes', cursive;
 
 .bottomCenter{
   top:60%;
-  font-size: 1.4em;
+  /* font-size: 1.4em; */
 }
 
 .logo {
@@ -45,19 +47,19 @@ font-family: 'Great Vibes', cursive;
 }
 
 .title{
-  margin-bottom: 450px;
+  margin-bottom: 400px;
 }
 
 .menu{
   position: relative;
-  height: 200px;
+  height: 300px;
 }
 
 .timeAxis{
 width: 500px;
-height:30px;
+height: 30px;
 margin: 10px auto;
-display:flex;
+display: flex;
 justify-content: space-between;
 list-style: none;
 position: absolute;
@@ -68,24 +70,24 @@ right:0;
 top: 150%;
 }
 
-.timeAxis li{
+.leaf{
   width: 30px;
   height:30px;
-  border-radius: 50%;
-  background-color:#333;
+  background-color: #000;
+  transform: scale(1.3);
+}
+
+.timeAxis li{
   position:relative;
   z-index: 2;
   line-height: 30px;
-  text-align: center;
-
 }
 
 .timeAxis:after{
   content:'';
-  height:5px;
+  height:3px;
   width:98%;
   position:absolute;
-  background-color: #ccc;
   top:0;
   bottom:0;
   left:0;
@@ -95,29 +97,61 @@ top: 150%;
 }
 
 
-.timeAxis li.hover{
-  background-color: #fff;
-  transform: scale(1.05);
+.timeAxis li.hover:nth-child(even){
+  animation: leafEven 2s;
+  cursor: pointer;
+}
+
+.timeAxis li.hover:nth-child(odd){
+  animation: leafOdd 2s;
+  cursor: pointer;
+}
+
+@keyframes leafEven {
+  0%{transform: translate3d(0,0,0);}
+  30%{transform: translate3d(0,15px,0);}
+100%{transform: translate3d(0,0,0);}
+}
+
+@keyframes leafOdd {
+  0%{transform: translate3d(0,0,0);}
+  30%{transform: translate3d(0,-15px,0);}
+100%{transform: translate3d(0,0,0);}
 }
 
 .sectionName{
-margin: 39px;
-font-size: 30px;
+margin: 40px;
+font-size: 25px;
+font-weight: lighter;
 visibility: visible;
 }
 
 .occupied{
-margin: 39px;
+margin: 40px;
 font-size: 30px;
 visibility: hidden;
 }
 
 
 .alignment{
-  margin: 31px auto;
+  margin: 40px auto;
   height: 200px;
   position: relative;
+left:0;
+right:0;
+top: 50%;
+bottom: 0;
+z-index: -1;
+}
 
+.left{
+  text-align: right;
+  margin-left: -5px;
+}
+
+.right{
+  margin-right: 60px;
+  text-align: left;
 }
 
 .row{
