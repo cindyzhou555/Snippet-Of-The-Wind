@@ -28,11 +28,11 @@ body{
 }
 
 .topCenter{
-font-family: 'Great Vibes', cursive;}
+font-family: 'Great Vibes', cursive;
+}
 
 .bottomCenter{
   top:60%;
-  /* bottom:20%; */
   font-size: 1.4em;
 }
 
@@ -45,7 +45,7 @@ font-family: 'Great Vibes', cursive;}
 }
 
 .title{
-  margin-bottom: 80%;
+  margin-bottom: 450px;
 }
 
 .menu{
@@ -103,6 +103,7 @@ top: 150%;
 .sectionName{
 margin: 39px;
 font-size: 30px;
+visibility: visible;
 }
 
 .occupied{
