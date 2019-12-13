@@ -1,10 +1,14 @@
 
 let snowflakes = []; // array to hold snowflake objects
 let ttl = 100;
-let wind = 0;
+let img;
+
+// function preload() {
+//   img = loadImage('Play/images/leaf_ori.png');
+// }
 
 function setup() {
-  createCanvas(400, 600);
+  createCanvas(windowWidth, windowHeight);
   // fill(240);
   noStroke();
   // noLoop();
@@ -38,7 +42,7 @@ function draw() {
 // snowflake class
 function snowflake() {
   // initialize coordinates
-  this.location = createVector(random(width, 0), random(0, 0));
+  this.location = createVector(random(width, 0), random(-300, 0));
   // this.x = random(width, 0);
   // this.y = random(height, 0);
   this.size = random(5, 15);
@@ -48,12 +52,15 @@ function snowflake() {
   this.acceleration = createVector(0,0);
   this.collide = false;
   this.display = function() {
-    ellipse(this.location.x, this.location.y, this.size);
+    ellipseMode(RADIUS);
+    ellipse(this.location.x, this.location.y, this.size/2);
+    // img.resize(this.size,0);
+    // image(img, this.location.x, this.location.y);
   };
   this.update = function(){
     let mouseV = createVector(mouseX, mouseY);
     mouseV.sub(this.location);
-    mouseV.setMag(0.1);
+    mouseV.setMag(0.05);
     mouseV.y = mouseV.y*0.1;
     this.acceleration = mouseV;
     if (this.collide==false) {
