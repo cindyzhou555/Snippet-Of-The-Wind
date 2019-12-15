@@ -1,0 +1,144 @@
+
+body {
+	background: #000;
+	font-family: 'Lato', Arial, sans-serif;
+	color: #fff;
+    overflow-y: scroll;
+}
+
+#logo {
+  position: absolute;
+  width: 6em;
+  height: 6em;
+margin:auto;
+left:0;
+right:0;
+ top: 4%;
+  z-index: 4;
+}
+
+.container {
+	margin: 9em auto;
+	max-width: 960px;
+}
+
+.stage {
+	list-style: none;
+	padding: 0;
+}
+
+
+/* Build the cube and rotate on hover */
+
+.cube {
+	width: 260px;
+	height: 400px;
+	margin: 30px;
+	float: left;
+	perspective: 1000px;
+}
+
+.section {
+	width: 260px;
+	height: 400px;
+	transform-style: preserve-3d;
+	transform: translateZ(-130px);
+	transition: transform 350ms;
+}
+
+.section:hover {
+	transform: rotateY(-78deg) translateZ(20px);
+}
+
+
+/* Transform and style the two planes */
+
+.section .poster,
+.section .intro {
+	position: absolute;
+	width: 260px;
+	height: 400px;
+	background-color: #fff;
+	backface-visibility: hidden;
+}
+
+.section .poster  {
+	transform: translateZ(130px);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.section .intro {
+	transform: rotateY(90deg) translateZ(130px);
+	border: 1px solid #B8B5B5;
+	font-size: 0.75em;
+}
+
+
+
+.intro h1 {
+  color: #FFF;
+	padding: 7px 10px;
+	font-weight: bold;
+	height: 195px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-shadow: 0px 1px 1px rgba(0,0,0,1);
+	margin: 0 0 2px;
+	font-size: 1.4em;
+}
+
+
+.intro p {
+	padding: 1.2em 1.4em;
+	margin: 2px 0 0;
+	font-weight: 700;
+	color: #666;
+	line-height: 1.4em;
+	border-top: 5px solid #555;
+}
+
+
+/* Embedded images */
+
+.cube:nth-child(1) .section .poster {
+  background-image: url(../img/poster01.jpg);
+}
+
+.cube:nth-child(2) .poster {
+  background-image: url(../img/poster02.jpg);
+}
+
+.cube:nth-child(3) .poster {
+  background-image: url(../img/poster03.jpg);
+}
+
+.cube:nth-child(1) .intro h1 {
+	background-color: blue;
+}
+
+.cube:nth-child(2) .intro h1 {
+	background-image: url(../img/still02.jpg);
+}
+
+.cube:nth-child(3) .intro h1 {
+  background-color: blue;
+}
+
+/*************************************
+Fallback
+**************************************/
+.no-csstransforms3d .section .poster,
+.no-csstransforms3d .section .intro {
+	position: relative;
+}
+
+/*************************************
+Media Queries
+**************************************/
+@media screen and (max-width: 60.75em){
+	.cube {
+		float: none;
+		margin: 30px auto 60px;
+	}
+}

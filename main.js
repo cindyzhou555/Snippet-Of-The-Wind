@@ -29,7 +29,7 @@ window.addEventListener("load", function(event) {
       }
       letterPositions[i] = (++letterPositions[i]) % texts[i].childNodes.length;
     }
-  }, 200)
+  }, 300)
 });
 
 //menu section effect
