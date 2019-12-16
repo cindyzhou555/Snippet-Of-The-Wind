@@ -1,5 +1,5 @@
 body {
-  height: 60vh;
+  height: 80vh;
   margin: 0;
   padding: 0;
   background-color: #000;
@@ -97,5 +97,10 @@ body {
 
 #a {
   background-image: url("../Art/images/xianjian.png");
-  background-size: cover;
+  background-size: 500px 340px;
+}
+
+#b {
+  background-image: url("../Art/images/liuyi.png");
+  background-size: 500px 320px;
 }

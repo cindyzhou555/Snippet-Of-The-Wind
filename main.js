@@ -78,58 +78,6 @@ for (var j = 0; j < menuSection.length; j++) {
   }
 }
 
-// for (var i = 0; i < section.length; i++) {
-//   hoverSection(i);
-// }
-//
-// function hoverSection() {
-//   if (i == 0) {
-//     section[i].onmouseover = function() {
-//       for (j = 0; j < section.length; j++) {
-//         section[j].classList.remove("hover");
-//       }
-//       this.classList.add("hover");
-//       informationSection[2].style.visibility = "visible";
-//       informationSection[2].style.animation = "informationSection 2s";
-//     }
-//   } else if (i == 1) {
-//     section[i].onmouseover = function() {
-//       for (j = 0; j < section.length; j++) {
-//         section[j].classList.remove("hover");
-//       }
-//       this.classList.add("hover");
-//       informationSection[0].style.visibility = "visible";
-//       informationSection[0].style.animation = "informationSection 2s";
-//     }
-//   } else if (i == 2) {
-//     section[i].onmouseover = function() {
-//       for (j = 0; j < section.length; j++) {
-//         section[j].classList.remove("hover");
-//       }
-//       this.classList.add("hover");
-//       informationSection[3].style.visibility = "visible";
-//       informationSection[3].style.animation = "informationSection 2s";
-//     }
-//   } else if (i == 3) {
-//     section[i].onmouseover = function() {
-//       for (j = 0; j < section.length; j++) {
-//         section[j].classList.remove("hover");
-//       }
-//       this.classList.add("hover");
-//       informationSection[1].style.visibility = "visible";
-// informationSection[1].style.animation = "informationSection 2s";
-//     }
-//   } else if (i == 4) {
-//     section[i].onmouseover = function() {
-//       for (j = 0; j < section.length; j++) {
-//         section[j].classList.remove("hover");
-//       }
-//       this.classList.add("hover");
-//       informationSection[4].style.visibility = "visible";
-// informationSection[4].style.animation = "informationSection 2s";
-//     }
-//   }
-// }
 
 //studio logo link
 var logo = document.getElementById("logo");
@@ -148,3 +96,11 @@ function toggleMenu(){
 }
 
 logo.addEventListener("click", toggleMenu);
+
+// function backToMenu(){
+//   console.log("1");
+//   title.style.display="none";
+//   menu.style.display="block";
+//   window.location.href = "index.html";
+//   console.log("2");
+// }

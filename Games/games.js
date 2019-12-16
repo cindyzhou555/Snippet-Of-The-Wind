@@ -58,3 +58,8 @@ function init(){
   const wait = txtElement.getAttribute('data-wait');
   new TypeWriter(txtElement, words, wait);
 }
+
+
+// var logo = document.getElementById("logo");
+//
+// logo.addEventListener("click", backToMenu);

@@ -70,72 +70,67 @@ right:0;
 
 .section .intro {
 	transform: rotateY(90deg) translateZ(130px);
-	border: 1px solid #B8B5B5;
+	/* border: 10px solid #B8B5B5; */
 	font-size: 0.75em;
 }
 
 
 
-.intro h1 {
+.intro .name {
   color: #FFF;
 	padding: 7px 10px;
 	font-weight: bold;
 	height: 195px;
-	background-size: contain;
-	background-repeat: no-repeat;
 	text-shadow: 0px 1px 1px rgba(0,0,0,1);
 	margin: 0 0 2px;
 	font-size: 1.4em;
 }
 
 
-.intro p {
+.intro .text {
 	padding: 1.2em 1.4em;
-	margin: 2px 0 0;
+	margin: 0;
 	font-weight: 700;
 	color: #666;
 	line-height: 1.4em;
-	border-top: 5px solid #555;
 }
 
 
 /* Embedded images */
 
 .cube:nth-child(1) .section .poster {
-  background-image: url(../img/poster01.jpg);
+	background-image: url(../About/images/shuyue.png);
+
 }
 
 .cube:nth-child(2) .poster {
-  background-image: url(../img/poster02.jpg);
+	background-image: url(../About/images/windsper.png);
+	background-size: contain;
+	background-repeat: repeat;
 }
 
 .cube:nth-child(3) .poster {
-  background-image: url(../img/poster03.jpg);
+  background-image: url(../About/images/yuxin.png);
+	background-size: contain;
+	background-repeat: repeat;
 }
 
-.cube:nth-child(1) .intro h1 {
-	background-color: blue;
+.cube:nth-child(1) .intro .name {
+	background-image: url(../About/images/yue.jpg);
+	background-size: cover;
 }
 
-.cube:nth-child(2) .intro h1 {
-	background-image: url(../img/still02.jpg);
+.cube:nth-child(2) .intro .name {
+	background-image: url(../About/images/studio.jpg);
+	background-size: 240px 200px;
 }
 
-.cube:nth-child(3) .intro h1 {
-  background-color: blue;
+.cube:nth-child(3) .intro .name {
+	background-image: url(../About/images/yan.jpg);
+	background-size: cover;
 }
 
-/*************************************
-Fallback
-**************************************/
-.no-csstransforms3d .section .poster,
-.no-csstransforms3d .section .intro {
-	position: relative;
-}
 
-/*************************************
-Media Queries
-**************************************/
 @media screen and (max-width: 60.75em){
 	.cube {
 		float: none;
