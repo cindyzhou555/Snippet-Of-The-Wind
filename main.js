@@ -29,62 +29,71 @@ window.addEventListener("load", function(event) {
       }
       letterPositions[i] = (++letterPositions[i]) % texts[i].childNodes.length;
     }
-  }, 200)
+  }, 300)
 });
 
-//information section showing up effect
-var section = document.getElementsByClassName("section");
-var sectionName = document.getElementsByClassName("sectionName");
+//menu section effect
+var leafSection = document.getElementsByClassName("leafSection");
+var menuSection = document.getElementsByClassName("menuSection");
 
-for (var i = 0; i < section.length; i++) {
-  hoverSection(i);
+menuSection[2].onmouseover = function(){
+  for (var i = 0; i < leafSection.length; i++) {
+        leafSection[i].classList.remove("hover");
+      }
+      leafSection[0].classList.add("hover");
+      this.style.animation = "menuEffect .5s forwards";
+}
+menuSection[0].onmouseover = function(){
+  for (var i = 0; i < leafSection.length; i++) {
+        leafSection[i].classList.remove("hover");
+      }
+      leafSection[1].classList.add("hover");
+      this.style.animation = "menuEffect .5s forwards";
+}
+menuSection[3].onmouseover = function(){
+  for (var i = 0; i < leafSection.length; i++) {
+        leafSection[i].classList.remove("hover");
+      }
+      leafSection[2].classList.add("hover");
+      this.style.animation = "menuEffect .5s forwards";
+}
+menuSection[1].onmouseover = function(){
+  for (var i = 0; i < leafSection.length; i++) {
+        leafSection[i].classList.remove("hover");
+      }
+      leafSection[3].classList.add("hover");
+      this.style.animation = "menuEffect .5s forwards";
+}
+menuSection[4].onmouseover = function(){
+  for (var i = 0; i < leafSection.length; i++) {
+        leafSection[i].classList.remove("hover");
+      }
+      leafSection[4].classList.add("hover");
+      this.style.animation = "menuEffect .5s forwards";
 }
 
-function hoverSection() {
-  if (i == 0) {
-    section[i].onmouseover = function() {
-      for (j = 0; j < section.length; j++) {
-        section[j].classList.remove("hover");
-      }
-      this.classList.add("hover");
-      sectionName[2].style.visibility = "visible";
-      sectionName[2].style.animation = "sectionName 3s";
-    }
-  } else if (i == 1) {
-    section[i].onmouseover = function() {
-      for (j = 0; j < section.length; j++) {
-        section[j].classList.remove("hover");
-      }
-      this.classList.add("hover");
-      sectionName[0].style.visibility = "visible";
-      sectionName[0].style.animation = "sectionName 3s";
-    }
-  } else if (i == 2) {
-    section[i].onmouseover = function() {
-      for (j = 0; j < section.length; j++) {
-        section[j].classList.remove("hover");
-      }
-      this.classList.add("hover");
-      sectionName[3].style.visibility = "visible";
-      sectionName[3].style.animation = "sectionName 3s";
-    }
-  } else if (i == 3) {
-    section[i].onmouseover = function() {
-      for (j = 0; j < section.length; j++) {
-        section[j].classList.remove("hover");
-      }
-      this.classList.add("hover");
-      sectionName[1].style.visibility = "visible";
-sectionName[1].style.animation = "sectionName 3s";
-    }
-  } else if (i == 4) {
-    section[i].onmouseover = function() {
-      for (j = 0; j < section.length; j++) {
-        section[j].classList.remove("hover");
-      }
-      this.classList.add("hover");
-      sectionName[4].style.visibility = "visible";
-sectionName[4].style.animation = "sectionName 3s";
-    }
+for (var j = 0; j < menuSection.length; j++) {
+  menuSection[j].onmouseout = function(){
+    this.style.animation = "";
   }
 }
+
+
+
+//studio logo link
+var logo = document.getElementById("logo");
+var menu = document.getElementById("menu");
+var mainTitle = document.getElementById("mainTitle");
+
+function toggleMenu(){
+  if (menu.style.display!="block"){
+    mainTitle.style.display="none";
+    menu.style.display="block";
+  }
+  else {
+    mainTitle.style.display="block";
+    menu.style.display="none";
+  }
+}
+
+logo.addEventListener("click", toggleMenu);
