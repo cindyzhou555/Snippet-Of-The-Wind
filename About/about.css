@@ -1,8 +1,8 @@
-
 body {
 	background: #000;
 	font-family: 'Lato', Arial, sans-serif;
 	color: #fff;
+	font-family: 'Montserrat Alternates', sans-serif;
     overflow-y: scroll;
 }
 
@@ -71,7 +71,6 @@ right:0;
 
 .section .intro {
 	transform: rotateY(90deg) translateZ(130px);
-	/* border: 10px solid #B8B5B5; */
 	font-size: 0.75em;
 }
 
@@ -82,7 +81,7 @@ right:0;
 	padding: 7px 10px;
 	font-weight: bold;
 	height: 195px;
-	text-shadow: 0px 1px 1px rgba(0,0,0,1);
+	text-shadow: 2px 1px 2px rgba(119,119,119,1);
 	margin: 0 0 2px;
 	font-size: 1.4em;
 }
@@ -101,7 +100,6 @@ right:0;
 
 .cube:nth-child(1) .section .poster {
 	background-image: url(../About/images/shuyue.png);
-
 }
 
 .cube:nth-child(2) .poster {
@@ -123,7 +121,7 @@ right:0;
 
 .cube:nth-child(2) .intro .name {
 	background-image: url(../About/images/studio.jpg);
-	background-size: 240px 200px;
+	background-size: cover;
 }
 
 .cube:nth-child(3) .intro .name {

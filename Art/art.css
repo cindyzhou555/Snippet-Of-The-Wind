@@ -5,6 +5,7 @@ body {
   background-color: #000;
   color: #fff;
   font-family: 'Croissant One', cursive;
+  /* font-display: block; */
   overflow-y: scroll;
 }
 
@@ -37,12 +38,13 @@ body {
 
 #title {
   position: absolute;
-  top: 38%;
-  font-size: 40px;
+  top: 42%;
+  font-size: 45px;
   text-align: center;
   margin: auto;
   left: 0;
   right: 0;
+  font-family: 'Spirax', cursive;
 }
 
 #display {
