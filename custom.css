@@ -208,10 +208,9 @@ cursor: pointer;
 
 .left {
   text-align: right;
-  margin-left: 25px;
+  margin-left: 0px;
 }
 
 .right {
   text-align: left;
-
 }

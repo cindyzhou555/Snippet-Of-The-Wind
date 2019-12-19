@@ -1,0 +1,20 @@
+body {
+	background: #000;
+	color: #fff;
+  margin:0;
+  padding: 0;
+ display:flex; 
+    overflow-y: scroll;
+}
+
+#logo {
+  position: absolute;
+  width: 6em;
+  height: 6em;
+margin:auto;
+left:0;
+right:0;
+ top: 4%;
+  z-index: 4;
+	cursor: pointer;
+}

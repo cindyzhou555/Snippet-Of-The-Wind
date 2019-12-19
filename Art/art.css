@@ -104,10 +104,7 @@ body {
   background-size: 500px 340px;
 }
 
-#b {
-  background-image: url("../Art/images/liuyi.png");
-  background-size: 500px 320px;
-}
+
 
 /* menu section */
 
@@ -213,7 +210,7 @@ cursor: pointer;
 }
 
 .occupied {
-  margin: 40px;
+  margin: 39px;
   font-size: 27px;
   visibility: hidden;
 }
@@ -242,7 +239,7 @@ cursor: pointer;
 
 .left {
   text-align: right;
-  margin-left: 25px;
+  margin-left: 0px;
 }
 
 .right {

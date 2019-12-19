@@ -102,10 +102,15 @@ body {
 }
 
 #a {
-  background-image: url("../Edutech/images/musices.png");
+  background-image: url("../Design/images/musices.png");
   background-size: contain;
   background-position: 20%;
   background-repeat: no-repeat;
+}
+
+#b {
+  background-image: url("../Design/images/liuyi.png");
+  background-size: 500px 320px;
 }
 
 /* menu section */
@@ -192,7 +197,7 @@ body {
 }
 
 .menuSection {
-  margin: 40px;
+  margin: 39px;
   font-size: 27px;
   color: #777;
   font-family: 'Megrim', cursive;
@@ -212,7 +217,7 @@ cursor: pointer;
 }
 
 .occupied {
-  margin: 40px;
+  margin: 39px;
   font-size: 27px;
   visibility: hidden;
 }
@@ -223,7 +228,7 @@ cursor: pointer;
   position: relative;
   left: 0;
   right: 0;
-  top: 31%;
+  top: 32%;
   bottom: 0;
   z-index: 3;
   justify-content: center;
@@ -241,7 +246,7 @@ cursor: pointer;
 
 .left {
   text-align: right;
-  margin-left: 25px;
+  margin-left: 0px;
 }
 
 .right {

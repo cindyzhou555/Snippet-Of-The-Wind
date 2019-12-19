@@ -24,7 +24,7 @@ function initiate(){
 
 
 function draw() {
-  background('brown');
+  background('black');
 
   if (snowflakes.length < ttl){
     snowflakes.push(new snowflake());
