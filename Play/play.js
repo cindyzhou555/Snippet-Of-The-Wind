@@ -9,6 +9,7 @@ let img;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+
   // fill(240);
   noStroke();
   // noLoop();
