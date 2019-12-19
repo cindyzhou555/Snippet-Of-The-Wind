@@ -8,7 +8,9 @@ let img;
 // }
 
 function setup() {
+  img = loadImage('Play/images/bg.png');
   createCanvas(windowWidth, windowHeight);
+
   // fill(240);
   noStroke();
   // noLoop();
@@ -24,8 +26,9 @@ function initiate(){
 
 
 function draw() {
-  background('black');
+  background(img);
 
+  // image(img, (windowWidth-img.width/2)/2, (windowHeight-img.height/2)/2, img.width / 2, img.height / 2);
   if (snowflakes.length < ttl){
     snowflakes.push(new snowflake());
   }
