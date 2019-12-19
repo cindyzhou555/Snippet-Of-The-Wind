@@ -19,3 +19,5 @@ Google's Halloween opening
 Technically, the steps needed to test our concept are as follows: (a) identifying the js logic in our website events, (b) searching keywords of the event effects on google to see how it is implemented with js, and (c) searching existing works to see what we can borrow from their codes.
 
 For the upcoming weeks, we would like to use the class time to further develop our website with the following steps: (a) building up html framework for the web content & finalizing the information hierarchy, (b) finalizing the visual style of the website & creating css effects, (c) integrating js elements and events for the entire website, (d) reviewing the preliminary work and adding more animated effects and interactive components, and (e) media query on different devices.  
+## Division of Labor:
+Shuyue is responsible of the graphics and coding of the interactive "play" page with p5.js. Yuxin is responsible for the coding of home page, menu page, and the other 4 subpages.
