@@ -20,7 +20,7 @@ right:0;
 }
 
 #subPage {
-	margin: 8em auto;
+	margin: 9em auto;
 	max-width: 960px;
 }
 
@@ -72,7 +72,7 @@ right:0;
 
 .section .intro {
 	transform: rotateY(90deg) translateZ(130px);
-	font-size: 12px;
+	font-size: 0.75em;
 }
 
 
@@ -83,7 +83,7 @@ right:0;
 	height: 195px;
 	text-shadow: 2px 1px 2px rgba(119,119,119,1);
 	margin: 0 0 2px;
-	font-size: 17px;
+	font-size: 1.4em;
 }
 
 
@@ -92,16 +92,16 @@ right:0;
 	margin: 0;
 	font-weight: 700;
 	color: #666;
-	line-height: 16px;
+	line-height: 1.4em;
 }
 
 .intro #studioText{
-	font-size: 15px;
+	font-size: 1.3em;
 	padding: 1.2em 1.4em;
 	margin: 0;
 	font-weight: 700;
 	color: #666;
-	line-height: 22px;
+	line-height: 1.4em;
 }
 
 
@@ -164,7 +164,7 @@ right:0;
 }
 
 .detailImg:hover .icon {
-  animation: visib .3s forwards;
+  animation: visib .6s forwards;
 }
 
 .wrapper:nth-child(1) .detailImg{
