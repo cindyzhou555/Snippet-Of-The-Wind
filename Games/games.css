@@ -84,6 +84,10 @@ h2 {
   float: left;
 }
 
+.section + #d{
+  border: 1px solid black;
+}
+
 .section:hover .description {
   animation: visib .6s forwards;
 }
@@ -118,6 +122,17 @@ h2 {
 #a {
   background-image: url("../Games/images/kitchen-survival.png");
   background-size: cover;
+}
+
+#b {
+  background-image: url("../Games/images/3Dpuzzle.png");
+  background-size: cover;
+}
+
+#c {
+  background-image: url("../Games/images/DayDream.png");
+  background-size: cover;
+  background-position: center;
 }
 
 /* menu section */

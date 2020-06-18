@@ -9,6 +9,11 @@ body {
   background-size: cover; */
 }
 
+/* h1{
+  letter-spacing: 20px;
+  font-size: 70px;
+} */
+
 .row {
   display: flex;
   flex-direction: row;
